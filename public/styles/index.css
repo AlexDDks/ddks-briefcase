@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+
+    background-image: url('/img/javier-miranda-nc1zsYGkLFA-unsplash.jpg');
+    background-size: cover;
+    /* border: 2px red solid; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+div img {
+    display: line;
+    width: 12vw;
+    padding: 2vw;
+}
+
+.allItems {
+    margin-left: 13vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0;
+    width: 50vw;
+}
+
+.welcome {
+    margin: 0;
+    margin-top: -1vw;
+    font-family: Orbitron;
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+
+    white-space: nowrap;
+    border-right: 3px solid rgb(255, 255, 255);
+    width: 6.6ch;
+    overflow: hidden;
+    animation: welcome 1.3s steps(10), cursorWelcome .8s 3;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+@keyframes welcome {0% {width: 0}}
+
+.text1 {
+
+    margin: 0;
+    padding-top: 0px;
+    font-family: Orbitron;
+    text-align: center;
+    font-size: 2.5vw;
+    color: white;
+
+    white-space: nowrap;
+    border-right: 3px solid rgb(255, 255, 255);
+    width: 22.9ch;
+    overflow: hidden;
+    animation: texto 2.5s steps(25), cursorText .8s infinite;
+    animation-delay: 4.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes texto {0% {width: 0}}
+@keyframes cursorWelcome {
+    0% {border-color: transparent}
+    50% {border-color: white}
+    100% {border-color: transparent}
+ }
+
+ @keyframes cursorText {
+    0% {border-color: transparent}
+    50% {border-color: white}
+    100% {border-color: transparent}
+ }
+
+div button {
+    font-family: Orbitron;
+    margin: auto;
+    padding: .75vw 1.5vw;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    background-color: rgb(20,29,46);
+    transition: all 450ms;
+    animation: button 9s 1;
+   }
+
+.divButton1{
+    animation: button 9.5s 1;
+}
+
+.divButton2{
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes button {
+    0% {opacity: 0%;}
+    10% {opacity: 0%;}
+    20% {opacity: 0%;}
+    30% {opacity: 0%;}
+    40% {opacity: 0%;}
+    50% {opacity: 0%;}
+    60% {opacity: 0%;}
+    70% {opacity: 0%;}
+    80% {opacity: 0%;}
+    87% {opacity: 0%;}
+    88% {opacity: 70%; background-color:rgb(255, 255, 255)};
+    92% {opacity: 80%; background-color:rgba(180, 180, 220, 1)};
+    96% {opacity: 90%; background-color:rgba(112, 116, 199, 1)};
+    100% {opacity: 100%; background-color: rgb(20,29,46)};
+}
+ 
+
+
+div button:hover {
+    background-color: rgba(255, 255, 255, 0.83);
+    transform: scale(1.15);
+    box-shadow: 0px 3px 12px 3px rgba(222,144,91,0.3);
+}
+
+.textButton1, .textButton2 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: bold;
+    transition: all 450ms;
+}
+
+.textButton1:hover, .textButton2:hover {
+    color: black;
+}
+
+.adressId{
+    position: absolute;
+    right: 3vw;
+    top: 4.3vw;
+    /* Para que el ícono quede centrado respecto al logo, tomando en cuenta que mide de alto 3.4 vw, y el logo 12 vw(con su padding) */
+}
+
+.adressId i{
+    color: rgba(255, 255, 255, 0.9);
+    height: 3.4vw;
+    font-size: 3vw;
+    transition: all 250ms;
+    /* Por alguna razón no acepta el hover de cambiar color y de la transición en ms, lo hace inmediatamente */
+    padding-left:2vw;
+}
+
+.adressId:hover{
+    transform: scale(1.1);
+}
+
+p{
+    color: white;
+    font-family: orbitron;
+    margin: 0;
+    padding:0;
+    padding-left:vw;
+    position: absolute;
+    left:0.6vw;
+    transition: all 250 ms;
+}
+

@@ -1,0 +1,27 @@
+{
+  "name": "nuevoportafolio",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexDDks/briefcase.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/AlexDDks/briefcase/issues"
+  },
+  "homepage": "https://github.com/AlexDDks/briefcase#readme",
+  "description": ""
+}

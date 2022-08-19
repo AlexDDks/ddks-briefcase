@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/photos.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Koulen&family=Orbitron:wght@500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Koulen&family=Orbitron:wght@500&family=Roboto:wght@300&family=Splash&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa36d49c1a.js" crossorigin="anonymous"></script>
+    
+    <title>Photos</title>
+</head>
+
+<body >
+    
+    <%- include('partials/header.ejs') %>
+
+    <section class="allItems">
+
+        <article class="containerAll">
+
+            <input type="radio" id="1" name="image-slide" hidden>
+            <input type="radio" id="2" name="image-slide" hidden>
+            <input type="radio" id="3" name="image-slide" hidden>
+            <input type="radio" id="4" name="image-slide" hidden>
+            <input type="radio" id="5" name="image-slide" hidden>
+
+
+            <div class="slider">
+
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img1Slider.jpg" alt="mainPhoto">
+                </div>
+
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img3Slider.jpg" alt="photoSlider">
+                </div>
+
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img2Slider.jpg" alt="photoSlider">
+                </div>
+
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img6Slider.jpg" alt="photoSlider">
+                </div>
+
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img7Slider.jpg" alt="photoSlider">
+                </div>
+
+            </div>
+
+            <div class="pagination">
+
+                <label class="paginationItem" for="1"> <img src="" alt="">
+                    <img src="/img/photos/slider/img1Slider.jpg" alt="photoRadio">
+                </label>
+
+                <label class="paginationItem" for="2"> <img src="" alt="">
+                    <img src="/img/photos/slider/img3Slider.jpg" alt="photoRadio">
+                </label>
+
+                <label class="paginationItem" for="3"> <img src="" alt="">
+                    <img src="/img/photos/slider/img2Slider.jpg" alt="photoRadio">
+                </label>
+
+                <label class="paginationItem" for="4"> <img src="" alt="">
+                    <img src="/img/photos/slider/img6Slider.jpg" alt="photoRadio">
+                </label>
+
+                <label class="paginationItem" for="5"> <img src="" alt="">
+                    <img src="/img/photos/slider/img7Slider.jpg" alt="photoRadio">
+                </label>
+
+            </div>
+
+
+        </article>
+
+
+
+        <article class="secondArticle">
+
+            <div class="itemSliderBottom">
+                <a href="/photos/photo1"><img class="imgSliderBottom" src="/img/photos/slider/img1Slider.jpg"
+                        alt=""></a>
+            </div>
+
+            <div class="itemSliderBottom">
+                <a href="/photos/photo2"> <img class="imgSliderBottom" src="/img/photos/slider/img3Slider.jpg"
+                        alt=""></a>
+            </div>
+
+            <div class="itemSliderBottom">
+                <a href="/photos/photo3"><img class="imgSliderBottom" src="/img/photos/slider/img2Slider.jpg"
+                        alt=""></a>
+            </div>
+
+            <div class="itemSliderBottom">
+                <a href="/photos/photo4"><img class="imgSliderBottom" src="/img/photos/slider/img6Slider.jpg"
+                        alt=""></a>
+            </div>
+
+            <div class="itemSliderBottom">
+                <a href="/photos/photo5"><img class="imgSliderBottom" src="/img/photos/slider/img7Slider.jpg"
+                        alt=""></a>
+            </div>
+
+        </article>
+
+    </section>
+
+</body>
+
+</html>
